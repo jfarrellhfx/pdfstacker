@@ -14,7 +14,7 @@ outName = str(sys.argv[2])
 percent = float(sys.argv[3]) / 100
 
 # load the pdf and prepare a writer
-infile = PdfFileReader("test.pdf")
+infile = PdfFileReader(inName)
 writer = PdfFileWriter()
 
 # iterate through all pages

@@ -1,4 +1,5 @@
 @ECHO OFF
+SET scriptdir=%~dp0
 
 SET infile=%1
 SET outfile=%2
@@ -9,4 +10,4 @@ SHIFT
 SHIFT
 
 call conda activate base
-call python stack.py %infile% %outfile% %percent%
+call python "%scriptdir%stack.py" %infile% %outfile% %percent%
